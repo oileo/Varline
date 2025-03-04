@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#container {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #2575fc;  /* Foco azul suave */
+    background-color: #ffffff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2575fc; /* Azul para botões */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background: #1e62c4; /* Azul mais escuro no hover */
+    transform: scaleX(1.01);  /* Efeito de expansão no hover */
+}
+
+ul {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.copy {
+    background: #28a745;  /* Verde para botão de copiar */
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0px!important;
+}
+
+button.copy:hover {
+    background: #218838;  /* Verde mais escuro no hover */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    #container {
+        padding: 20px;
+    }
+
+    input, button {
+        padding: 12px;
+    }
+
+    li {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
